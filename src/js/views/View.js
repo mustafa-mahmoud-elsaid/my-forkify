@@ -19,7 +19,7 @@ export default class View {
       const curEl = currElements[i];
       if (!newEl.isEqualNode(curEl) &&
         newEl.firstChild?.nodeValue.trim() !== '') {
-        curEl.textContent = newEl.textContent;
+        curEl.textContent = newEl?.textContent;
       }
       if (!newEl.isEqualNode(curEl)) {
         Array.from(newEl.attributes)
